@@ -1,6 +1,6 @@
-# Angular 1.x dyrektywy vs Angular 2 komponenty 
+# Dyrektywy Angular 1.x vs komponenty Angular 2 
 
-Dyrektywy nadal istnieją w Angularze 2. Komponenty są natomiast najważniejszym typem dyrektyw. Posiadają one dodatkowo template. Same komponenty są podstawą Angulara 2. 
+Dyrektywy nadal istnieją w Angularze 2. Komponenty są natomiast najważniejszym typem dyrektyw. Posiadają one dodatkowo widok. Same komponenty są podstawą Angulara 2. 
 
 
 
@@ -39,7 +39,7 @@ Największa zmiana w htmlowym wywołaniu dyrektywy to przekazanie parametru do d
 <home-component [person]="{ name: 'John' }"></home-component>
 ```
 
-W samym kodzie nie ma już kontrolerów. Wszystko dzieje się w komponencie. `restrict` został zamieniony na `selector`, a dane wejściowe można teraz przekazać tworząc property klasy z dekoratorem `@Input()`.
+W samym kodzie nie ma już osobnych kontrolerów. Wszystko dzieje się w komponencie. `restrict` został zamieniony na `selector`, a dane wejściowe można teraz przekazać tworząc atrybuty klasy z dekoratorem `@Input()`.
 
 ```
 import {Component, Input} from 'angular2/angular2'

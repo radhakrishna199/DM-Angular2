@@ -1,10 +1,10 @@
 # Form Builder
 
-W Angularze 2 mamy do dyspozycji nowy system tworzenie formularzy. Wcześniej wszystko opierało się na `ng-model`, teraz jest jeszcze `FormBuilder`. W tym przypadku grupę oraz walidatory tworzymy w kodzie, a nie w htmlu (jak wcześniek). Pozwala to na przede wszystkim na testowanie kodu.
+W Angularze 2 mamy do dyspozycji nowy system tworzenie formularzy. Wcześniej wszystko opierało się na `ng-model`, teraz jest jeszcze `FormBuilder`. W tym przypadku grupę oraz walidatory tworzymy w kodzie, a nie w htmlu (jak wcześniej). Pozwala to przede wszystkim na testowanie kodu.
 
 ## Model formularza
 
-Cały model w pliku html tworzony jest poprzez dodanie na formularzu `[ng-form-model]` i zdefiniowaniu dla niego nazwy. Dzięki niej będzie można poruszać się pomiędzy kodem komponentu a danymi wprowadzanymi przez użytkownika. Tworzenie kolejnych kontrolek sprowadza się do dodania `ng-controler` z nazwą oraz zdefiniowanie grupy w instancji `FormBuiler`a. 
+Cały model w pliku html tworzony jest poprzez dodanie na formularzu `[ng-form-model]` i zdefiniowaniu dla niego nazwy. Dzięki niej będzie można poruszać się pomiędzy kodem komponentu a danymi wprowadzanymi przez użytkownika. Tworzenie kolejnych kontrolek sprowadza się do dodania `ng-control` z nazwą oraz zdefiniowanie grupy w instancji `FormBuiler`a. 
 
 ```
 import {bootstrap, Component, FormBuilder, Validators, FORM_DIRECTIVES, FORM_PROVIDERS} from 'angular2/angular2';

@@ -1,6 +1,6 @@
 # Router 
 
-## Bootstrapowanie routera: 
+## Inicjowanie routera: 
 ```
 import {bootstrap} from 'angular2/angular2';
 import {ROUTER_PROVIDERS} from 'angular2/router';
@@ -10,7 +10,7 @@ import {App} from './app';
 bootstrap(App, [ROUTER_PROVIDERS]);  
 ```
 
-Dodatkowo Angular będzie nas prosił o dodanie taga `<base href="/"></base>` do pliku `index.html`.
+Dodatkowo Angular będzie nas prosił o dodanie taga `<base href="/"/>` do pliku `index.html`.
 
 ## Dodawanie pierwszej ścieżki i nawigacji
 
